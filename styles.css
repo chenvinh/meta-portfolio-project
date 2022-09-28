@@ -23,27 +23,8 @@ h2 {
 header > img {
   display: block;
   margin: 0 auto;
+  max-width: 780px;
 }
-
-/* nav ul {
-  list-style-type: none;
-  text-align: center;
-  background-color: grey;
-  height: 30px;
-  border-radius: 10px;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav li a {
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  margin-right: 5px;
-} */
 
 nav ul {
   display: flex;
@@ -110,14 +91,15 @@ article {
 
 .heading1 p {
   width: 50%;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin: 25px;
+  color: lightgrey;
 }
 
 .heading2 {
   background: lightgoldenrodyellow;
   border: 10px solid white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .heading2 h2 {
@@ -147,9 +129,10 @@ article {
 }
 
 .heading2 a:active {
-  color: red;
-  background: blueviolet;
+  color: #fff;
+  background: orange;
   font-weight: bold;
+  border-radius: 10px;
   box-shadow: 5px 0 10px black;
 }
 
@@ -190,4 +173,28 @@ footer img {
 
 footer img:hover {
   transform: scale(1.2) translateY(15px);
+}
+
+@media (max-width: 768px) {
+  header > img {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  section {
+    display: block;
+  }
+
+  .heading1 {
+    height: 280px;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer div p {
+    margin: 0 auto;
+  }
 }
